@@ -74,7 +74,7 @@ def main():
         ip = item
         if '\n' in ip:
             ip = ip[0:-1]
-        ip_upstatus = os.system("ping -n 1 " + ip)
+        ip_upstatus = os.system("ping -c 1 " + ip)
         if ip_upstatus == 0:
             with open("mail.tmp", "a") as mail_tmp:
                 mail_tmp.write(logdata_time + "[log_monitor_ping_success] - "+ip+ " reachable: True\r\n")
