@@ -1,0 +1,12 @@
+FromMail: mail@adress.org
+FromServer: smtp.server.org
+FromPort: 465
+FromUser: username
+FromPasswd: password
+ToMail: recieving@mail.adress
+SSL: 1
+TLS: 0
+Location: location
+
+1 = True
+0 = False
