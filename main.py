@@ -95,7 +95,6 @@ def sendMail(user, pwd, to, subject, text):
     try:
         global smtpServer
         if ssl == True:
-            #global smtpServer
             smtpServer = smtplib.SMTP_SSL(fromServer, fromPort)
 
         else:
